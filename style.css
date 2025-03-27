@@ -1,0 +1,301 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+.navbar {
+    backdrop-filter: blur(15px); 
+    background-color: rgba(255, 255, 255, 0.1);
+    color: black;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    height: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+}
+.nav-links {
+    padding-right: 20px;
+    list-style: none;
+    display: flex;
+}
+.nav-links li {
+    margin-right: 20px;
+}
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: 0.3s;
+}
+.nav-links a:hover {
+    border-bottom: 2px solid black; 
+}
+.hero {
+    background: url('https://lh3.googleusercontent.com/gps-cs-s/AB5caB-eARB87ztk3pKourfuTkDiHWHI5ZE_nernZRNzuA5k_uyXfxFTNJnpx1T2f-iPgFrc21YJYp9GzcCciqZAPkUbNKLqG6F30QCVdwvj5UjBF3xUmhg53qwm9i-3rZCAPMTZaXvv=s1360-w1360-h1020') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.hero-text {
+    position: relative;
+    padding: 20px;
+    border-radius: 8px;
+    backdrop-filter: blur(1px);
+}
+.testimonials {
+    background-color: #f8f9fa; 
+    padding: 50px 20px;
+    text-align: center;
+}
+.testimonials h3 {
+    font-size: 2.5rem;
+    color: black; 
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+.testimonial-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+.testimonial {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+/* Testimonial Box Hover Effect */
+.testimonial:hover {
+    transform: translateY(-10px); /* Slightly lift the box */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Testimonial Image Styling */
+.testimonial img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid black; 
+}
+.testimonial h4 {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.testimonial p {
+    font-size: 1rem;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 0;
+}
+@media (max-width: 768px) {
+    .testimonial-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimonial {
+        width: 90%; 
+    }
+    .testimonials h3 {
+        font-size: 2rem; 
+    }
+}
+.map-section {
+    background-color: #f4f6f9; 
+    padding: 50px 20px; 
+    border-radius: 15px; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1200px; 
+}
+.map-section h2 {
+    font-size: 2.5rem; 
+    color: black; 
+    margin-bottom: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+}
+.map-section iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+}
+@media (max-width: 768px) {
+    .map-section {
+        padding: 30px 15px; 
+    }
+
+    .map-section h2 {
+        font-size: 2rem; 
+    }
+
+    .map-section iframe {
+        height: 300px; 
+    }
+}
+.logo{
+    padding-left: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.hero-text h1{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.about h2, .courses h2, .testimonials h2, .map-section h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.about {
+    padding: 50px 10%;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.about-image {
+    flex: 1;
+}
+.about-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+.about-text {
+    flex: 1;
+    text-align: left;
+    padding-left: 40px;
+}
+.about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-text {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+}
+.courses {
+    background-color: #f8f9fa; 
+    padding: 50px 20px; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); 
+}
+.courses h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: black; 
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+.courses p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+.courses ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+    gap: 30px; 
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.courses li {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.courses li:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+}
+.courses li strong {
+    font-size: 1.3rem;
+    color: black; 
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.courses li p {
+    font-size: 1rem;
+    color: #333; 
+    margin-bottom: 0;
+}
+@media (max-width: 768px) {
+    .courses {
+        padding: 30px 15px; 
+    }
+    .courses h2 {
+        font-size: 2rem; 
+    }
+    .courses p {
+        font-size: 1rem;
+    }
+    .courses li {
+        padding: 15px; 
+    }
+}
+/* Footer Styling */
+footer {
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+    text-align: center; /* Center the text */
+    padding: 20px 0; /* Padding around the footer */
+    position: relative;
+    bottom: 0;
+    width: 100%; /* Ensure it spans the full width */
+}
+
+footer .footer-content {
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 5px 0; /* Space between paragraphs */
+}
+
